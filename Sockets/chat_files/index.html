@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Window</title>
+        <!-- reference to socket.io libraries made on the front end -->
+        <script src="/socket.io/socket.io.js"></script>
+
+        <!-- reference to css file for styling the html document-->
+        <link href="/style.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <!--Using div to create a placeholder for the private chat-->
+        <div id="private_chat">
+
+            <h2>Private Chat</h2>
+
+            <!-- Private chat container contains a container for chat area. -->
+            <!-- This contains a container for the chat text to be displayed -->
+            <!-- It also contains a container for acknowledgement. -->
+            <!-- acknowledgement id will be used to display when a sender is
+                 typing a message. -->
+            <div id="chat_area">
+                <div id="chat_text"></div>
+                <div id="acknowledgement"></div>
+            </div>
+
+            <!-- The private chat placeholder contains an input box for
+                 the sender's username, the message and a send button. -->
+            <input id="sender_username" type="text" placeholder="Username" />
+            <input id="message" type="text" placeholder="Message" />
+            <input id="receiver" type="text" placeholder="You send to..." />
+            <button id="send_message">Send</button>
+
+        </div>
+
+        <!-- link to javascript file for the front end -->
+        <script src="/chat_info.js"></script>
+
+    </body>
+</html>

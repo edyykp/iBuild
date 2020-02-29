@@ -1,0 +1,74 @@
+/*heading for the chat title*/
+h2{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 120px;
+    padding-right: 50px;
+    color: #2D8585;
+}
+
+/*specifies the font to be used for the body of the chat*/
+body{
+    font-family: 'Trebuchet MS';
+}
+
+input{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #FFF;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    border: 0px;
+    width: 100%;
+    border-bottom: 1px solid #B2B2B2;
+}
+
+button{
+    font-size: 18px;
+    border: 0px;     /* to prevent the white outline around the button from showing up*/
+    background: #2D8585;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 75%;
+    border-radius: 20px 20px 20px 20px;
+    margin: 7px 40px 10px 40px;
+}
+
+/*stylizes the chat box*/
+#private_chat{
+    border: 0.5px solid #C0C0C0;
+    max-width: 350px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/*provides styling details for the chat area.
+Overflow: auto ensures that the text does not go beyond the chat box*/
+#chat_area{
+    background: #F8F8F8;
+    height: 350px;
+    overflow: auto;
+}
+
+/*specifies the color of all the <strong> elements under the output id*/
+#chat_text strong{
+    color: #2D8585;
+}
+
+/*p selects all the paragraph <p> elements of the id chat_text*/
+#chat_text p{
+    padding-top: 12px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-bottom: 1px solid #B2B2B2;
+    color: #353535;
+}
+
+#acknowledgement p{
+    color: #9B9B9B;
+    padding: 2px 5px 2px 5px;
+    margin-left: 5px
+}

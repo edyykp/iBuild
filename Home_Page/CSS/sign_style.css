@@ -1,0 +1,190 @@
+#signup h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 27px;
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+#signup form {
+    width: 750px;
+    background-color: #ffffff;
+}
+
+,v-align-bottom {
+    vertical-align: bottom;
+}
+
+,v-align-mid {
+    vertical-align: middle;
+}
+
+.header {
+    height: 60px;
+    background-color: #0A0A0A;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-header-logo {
+    /*display: inline-block;*/
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+    top: calc(50% - 20px);
+}
+
+#close-sign {
+    float: right;
+    width: 24px;
+    height: 24px;
+}
+
+.header a {
+    float: right;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: calc(50% - 12px);
+    z-index: 1;
+}
+
+/*#close-sign
+{
+    float: right;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: calc(50% - 12px);
+}*/
+
+.header p {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    top: calc(50% - 12px);
+    color: #ffffff;
+}
+
+.signup-box {
+    padding: 30px 30px 20px 30px;
+}
+
+.signup-box p{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 300px;
+    background:#f2f3f5;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-style: none;
+    box-sizing: border-box;
+    outline-style: none;
+    transition: all .2s ease-in-out;
+}
+
+input:focus {
+    background-color: #f9fafb;
+    border-left: 2px solid #6471C9;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+}
+
+input[type=checkbox] {
+    height: 20px;
+    min-width: 20px;
+}
+
+.info-sign {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.signup-box a {
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+.checkbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkbox label {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.checkbox input {
+    vertical-align: middle;
+}
+
+.checkbox label span {
+    vertical-align: middle;
+}
+
+input[type=submit] {
+    font-weight: 100;
+}
+
+#submit-sign-up {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 13px 15px;
+    background-color: #6CB831;
+    color: #fff;
+    /*font-weight: 300px;*/
+    font-size: 18px;
+    border-bottom: 2px solid #61a52c;
+}
+
+#submit-sign-up:hover {
+    background-color: #61a52c;
+    transform: translateY(2px);
+}
+
+.alternate-link {
+    vertical-align: bottom;
+}
+
+.alternate-link p{
+    float: right;
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #4f4f4f;
+}
+
+.alternate-link a{
+    color: #3399ff;
+    /*text-decoration: none;*/
+}
+
+/*-----------------------------------------------------------
+Grid modifications
+-------------------------------------------------------------*/
+
+.signup-box .row {
+    padding-bottom: 15px;
+}
+
+.signup-box .col-6 {
+    padding: 0 10px 0 0;
+}
