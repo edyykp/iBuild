@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>iBuild - Search Page</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/search_page.css">
+  <body>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<a href="../PHP/edit_profile_page.php"><img src="../img/logoWithBar4.png" alt="logo"></a>
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a class="cta" href="#" id="action3"><img src="../img/loupe.png" alt="Search page icon"> Search</a></li>
+							<li><a class="cta" href="#" id="action1"><img src="../img/alarm.png" alt="Notifications icon"></a></li>
+							<li><a class="cta" href="#"><img src="../img/home.png" alt="Home icon"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+</head>
+<div class="refine_form">
+      <h1>Refine your Search</h1>
+      <h2>Ratings</h2>
+        <div class="star-eval">
+          <span class="stars-bg">
+              <i class="star-active" style="width: 73%"></i>  <!-- change this percent will change the yellow stars width directly-->
+          </span>
+        </div>
+      <h2>Price</h2>
+      <form class="price_form">
+				<p>From  £</p><input type="number" class="price" placeholder="5000"><p>to  £</p><input  type="number" class="price" placeholder="15000">
+			</form>
+      <h2>Location</h2>
+      <div class="custom-select" style="width:200px;">
+      <select>
+        <option value="0">Select Country:</option>
+        <option value="1">United Kindom</option>
+      </select>
+       <div class="tags">
+         <h2>Tags</h2>
+				 <div class="tag">Office</div>
+				 <div class="tag">Home</div>
+				 <div class="tag">Interior Design</div>
+				 <div class="tag">Office</div>
+				 <div class="tag">Home</div>
+				 <div class="tag">Interior Design</div>
+       </div>
+		 </div>
+	 </div>
+
+<div class="search_form">
+			<img src="../img/logoWithBar4.png" id="logo_mid">
+			<div class="search_inputbox">
+				<input type="text" id="search_input" placeholder="Enter keywords here...">
+				<img src="../img/loupe.png" class="search_icon" alt="search_icon" style="width: 20px;height: 20px; margin-top:6px;;padding: 5px;background-color:white; border-radius:5px;">
+				<P>For example, Offic, Kitchen, etc.</p>
+			</div>
+
+			<div class="sort_info">
+				<p style="margin-top:50px;">Number of matching result: </p> <p>0</p>
+				<label>Sorted by<select>
+									        <option value="0">Ratings</option>
+									        <option value="1">Price</option>
+													<option value="2">Location</option>
+													<option value="3">Tags</option>
+													<option value="4">ALL</option>
+									      </select>
+				</label>
+			</div>
+			<div class="each_archi">
+						<img src="../img/slideshow3.jpg" alt="archi_image" class="show_archi_image">
+					<ul class="info">
+						<li>	<img src="../profile_photos/none_image.png" alt="profile" style="width: 50px;" class="archi_photo" ></li>
+						<li style="display:inline-block;"><a href="#"> <h2>ArchiBot1</h2></a></li>
+						<li style="float:right;line-height: 0px;"> <p>Base Price: £null</p></li>
+						<li>	<div class="star-eval">
+			          <span class="stars-bg2">
+			              <i class="star-active2" style="width: 89%"></i>  <!-- change this percent will change the yellow stars width directly-->
+			          </span>
+			        </div></li>
+						<li style="line-height:30px;">	<p style="font-size: 16px; color:#525252;">"Self DescriptionSelf DescriptionSelf DescriptionSelf DescriptionSelf DescriptionSelf Description ..."</p></li>
+						<li style="line-height:17px;">	<img src="../img/map_point.png" alt="map_point" style="width: 15px; float:left;" class="tine_point"><p style="color:#808080;">Location</p></li>
+						<li>	<p>Tags</p></li>
+						<div class="tag">Office</div>
+						<div class="tag">Home</div>
+						<div class="tag">Interior Design</div>
+						<div class="tag">Office</div>
+						<div class="tag">Home</div>
+						<div class="tag">Interior Design</div>
+					</ul>
+			</div>
+
+
+			<div class="each_archi">
+						<img src="../img/slideshow2.jpg" alt="archi_image" class="show_archi_image">
+						<ul class="info">
+							<li>	<img src="../profile_photos/none_image.png" alt="profile" style="width: 50px;" class="archi_photo" ></li>
+							<li style="display:inline-block;"><a href="#"> <h2>ArchiBot2</h2></a></li>
+							<li style="float:right;line-height: 0px;"> <p>Base Price: £null</p></li>
+							<li>	<div class="star-eval">
+				          <span class="stars-bg2">
+				              <i class="star-active2" style="width: 89%"></i>  <!-- change this percent will change the yellow stars width directly-->
+				          </span>
+				        </div></li>
+							<li style="line-height:30px;">	<p style="font-size: 16px; color:#525252;">"Self DescriptionSelf DescriptionSelf DescriptionSelf DescriptionSelf DescriptionSelf Description ..."</p></li>
+							<li style="line-height:17px;">	<img src="../img/map_point.png" alt="map_point" style="width: 15px; float:left;" class="tine_point"><p style="color:#808080;">Location</p></li>
+							<li>	<p>Tags</p></li>
+							<div class="tag">Office</div>
+							<div class="tag">Home</div>
+							<div class="tag">Interior Design</div>
+							<div class="tag">Office</div>
+							<div class="tag">Home</div>
+							<div class="tag">Interior Design</div>
+						</ul>
+			</div>
+
+
+			<div class="each_archi">
+						<img src="../img/slideshow1.jpg" alt="archi_image" class="show_archi_image">
+						<ul class="info">
+							<li>	<img src="../profile_photos/none_image.png" alt="profile" style="width: 50px;" class="archi_photo" ></li>
+							<li style="display:inline-block;"> <a href="#"> <h2>ArchiBot3</h2></a></li>
+							<li style="float:right;line-height: 0px;"> <p>Base Price: £null</p></li>
+							<li>	<div class="star-eval">
+				          <span class="stars-bg2">
+				              <i class="star-active2" style="width: 89%"></i>  <!-- change this percent will change the yellow stars width directly-->
+				          </span>
+				        </div></li>
+							<li style="line-height:30px;">	<p style="font-size: 16px; color:#525252;">"Self DescriptionSelf DescriptionSelf DescriptionSelf DescriptionSelf DescriptionSelf Description ..."</p></li>
+							<li style="line-height:17px;">	<img src="../img/map_point.png" alt="map_point" style="width: 15px; float:left;" class="tine_point"><p style="color:#808080;">Location</p></li>
+							<li>	<p>Tags</p></li>
+							<div class="tag">Office</div>
+							<div class="tag">Home</div>
+							<div class="tag">Interior Design</div>
+							<div class="tag">Office</div>
+							<div class="tag">Home</div>
+							<div class="tag">Interior Design</div>
+						</ul>
+			</div>
+
+			<div class="page-normal">
+				<span class="page-prev">&lt;</span>
+				<span class="page-current">1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				……
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">&gt;</a>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<ul>
+				<li><a class="cta" href="Terms_conditions.html">Terms and Conditions</a></li>
+				<li><a class="cta" href="#">Privacy</a></li>
+				<li><a class="cta" href="#">About us</a></li>
+				<li><a class="cta" href="#">Help</a></li>
+			</ul>
+		</div>
+
+
+
+
+  </body>
+</html>

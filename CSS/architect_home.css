@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+
+/*-----------------------------------------------------------
+Page Sections and Elements
+-------------------------------------------------------------*/
+
+/*provides styling details for the chat area.
+Overflow: auto ensures that the text does not go beyond the chat box*/
+#chat_area{
+    background: #F8F8F8;
+    height: 350px;
+    overflow: auto;
+}
+
+#private_chat{
+    border: 0.5px solid #C0C0C0;
+    max-width: 350px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+/*specifies the color of all the <strong> elements under the output id*/
+#chat_text strong{
+    color: #2D8585;
+}
+
+/*p selects all the paragraph <p> elements of the id chat_text*/
+#chat_text p{
+    padding-top: 12px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-bottom: 1px solid #B2B2B2;
+    color: #353535;
+}
+
+#acknowledgement p{
+    color: #9B9B9B;
+    padding: 2px 5px 2px 5px;
+    margin-left: 5px
+}
+
+/* for chat CSS below */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 350px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.form-container input{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #FFF;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    border: 0px;
+    width: 100%;
+    border-bottom: 1px solid #B2B2B2;
+}
+body, html{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fb;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #444444;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.cta {
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0A0A0A;
+    display: inline-block;
+    padding: 5px;
+    min-width: 40px;
+    margin: 15px 2px;
+    text-align: center;
+}
+
+a.cta.blue {
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #6471C9;
+    width: 50%;
+    height: 50px;
+    padding: 13px 12px;
+    margin: 0;
+    float: left;
+}
+
+a.cta.green {
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #008A65;
+    width: 50%;
+    height: 50px;
+    padding: 13px 12px;
+    margin: 0;
+    float: left;
+}
+
+#highlight {
+    background-color: #2d8586;
+    padding: 5px 15px;
+}
+
+.menu {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+nav{
+    min-height: 70px;
+    background-color: #0A0A0A;
+    padding: 0 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.20);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+nav .logo{
+    float: left;
+    box-sizing: border-box;
+    width: 49px;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 24px);
+}
+
+nav .logo img {
+    padding: 0;
+    margin: 0;
+    width: 49px;
+    height: 48px;
+}
+
+nav .logo a {
+    padding: 0;
+    margin: 0;
+}
+
+nav .menu {
+    float: right;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: right;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #C8C8C8;
+    text-decoration: none;
+    padding: 21px 10px;
+    line-height: 29px;
+}
+
+nav a img {
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+.cover {
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url('../img/cover_img.jpg');
+    z-index: -1;
+}
+
+.content {
+    margin-top: 20px;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+    height: auto;
+}
+
+.profile-info {
+    /*background-color: #C8C8C8;*/
+    background-color: #E6F4F1;
+    position: relative;
+    text-align: center;
+    /*overflow: hidden;*/
+}
+
+.profile-pic {
+    /*display: block;*/
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-color: #1C1E46;
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url('../img/avatar.png');
+    /*margin: -115px auto 10px auto;*/
+    margin-bottom: 10px;
+    position: relative;
+    top: -115px;
+    left: calc(50% - 115px);
+
+}
+
+.profile-info h2 {
+    position: relative;
+    top: -115px;
+    /*top: -100px;*/
+    /*top: 0;*/
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.profile-info p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+    top: -110px;
+}
+
+.fa-star,
+.fa-star-half {
+    color: orange;
+    background-color: #1C1E46;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.architect-rating {
+    position: relative;
+    top: -110px;
+}
+
+.projects-section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa-upload,
+.fa-user-circle {
+    margin-right: 5px;
+}
+
+.project-item {
+    /*background-color: #D8D8DA;*/
+    background-color: #f2f3f5;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-item h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project-item p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 8px 9px;
+    background-color: #dde0e0;
+    border-radius: 13px;
+    box-shadow: 0.75px 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+.footer {
+    background-color: #0A0A0A;
+    padding: 10px;
+    min-height: 70px;
+}
+
+.footer .menu {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    display:    block;
+    padding-bottom: 15px;
+}
+
+.footer a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8A8A;
+    text-decoration: none;
+    padding: 2px 10px;
+    line-height: 21px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 770px) {
+    /*
+    Mobile to tablet transitions
+    */
+
+    a.cta.alt{
+      top: -80px;
+      left: 27px;
+    }
+
+    a.cta.blue {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+      width: auto;
+      height: auto;
+    }
+
+    a.cta.green {
+      font-size: 16px;
+      padding: 10px 9px;
+      float: right;
+      width: auto;
+      height: auto;
+    }
+
+    h2 {
+      text-align: left;
+    }
+
+    .projects-section {
+      padding-left: 20px;
+    }
+
+    .project-item img {
+      margin-right: 20px;
+    }
+
+    .footer {
+      padding: 0 10px;
+    }
+
+    .footer .menu {
+      float: left;
+      margin: 15px 0;
+    }
+
+    .footer li {
+      display: inline-block;
+      padding-bottom: 0;
+    }
+
+    .col-3 {
+      float: left;
+      width: 35%;
+      box-sizing: border-box;
+    }
+
+    .col-9 {
+      float: left;
+      width: 65%;
+      box-sizing: border-box;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    /*
+    Tablet to desktop transitions
+    */
+
+    .project-item {
+      padding: 16px 80px 16px 16px;
+    }
+
+    .project-item img {
+      float: left;
+      width: 50%;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .col-3 {
+      width: 25%;
+    }
+
+    .col-9 {
+      width: 75%;
+    }
+}
+
+
+/*-----------------------------------------------------------
+Grid
+-------------------------------------------------------------*/
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/*.row {
+    overflow: hidden;
+    box-sizing: border-box;
+}*/
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    float: left;
+    width: 8.33333333%;
+    box-sizing: border-box;
+}
+
+.col-2 {
+    float: left;
+    width: 16.66666667%;
+    box-sizing: border-box;
+}
+
+/*.col-3 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+*/
+
+.col-4 {
+    float: left;
+    width: 33.33333333%;
+    box-sizing: border-box;
+}
+
+
+.col-5 {
+    float: left;
+    width: 41.66666667%;
+    box-sizing: border-box;
+}
+
+.col-6 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.col-7 {
+    float: left;
+    width: 58.33333333%;
+    box-sizing: border-box;
+}
+
+.col-8 {
+    float: left;
+    width: 66.66666667%;
+    box-sizing: border-box;
+}
+
+/*.col-9 {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+}*/
+
+.col-10 {
+    float: left;
+    width: 83.33333333%;
+    box-sizing: border-box;
+}
+
+.col-11 {
+    float: left;
+    width: 91.66666667%;
+    box-sizing: border-box;
+}
+
+.col-12 {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}

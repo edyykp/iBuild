@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+
+/*-----------------------------------------------------------
+Page Sections and Elements
+-------------------------------------------------------------*/
+
+
+body, html{
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: 300;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #444444;
+}
+
+a.cta{
+	font-weight: 300;
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #0A0A0A;
+	display: inline-block;
+	padding: 5px;
+	min-width: 90px;
+	margin: 15px 2px;
+	text-align: center;
+}
+
+#highlight {
+	background-color: #2d8586;
+	padding: 5px 15px;
+}
+
+.menu {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+nav{
+	min-height: 70px;
+	background-color: #0A0A0A;
+	padding: 0 10px;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.20);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav .logo{
+	float: left;
+	box-sizing: border-box;
+	width: 49px;
+	height: 48px;
+	position: absolute;
+	top: calc(50% - 24px);
+}
+
+nav .logo img {
+	padding: 0;
+	margin: 0;
+	width: 49px;
+	height: 48px;
+}
+
+nav .logo a {
+	padding: 0;
+	margin: 0;
+}
+
+nav .menu{
+	float: right;
+}
+
+nav ul{
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: right;
+}
+
+nav a{
+	font-size: 16px;
+	font-weight: 300;
+	color: #C8C8C8;
+	text-decoration: none;
+	padding: 21px 10px;
+	line-height: 29px;
+}
+
+.logo-banner{
+	background-color: #000000;
+	box-sizing: border-box;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	background-image: url('../img/hero-banner3.jpg');
+	/*animation: slideBg 20s linear infinite 0s;
+	animation-timing-function: ease-in-out;*/
+}
+
+/*
+Slideshow disabled as it doesn't look good
+*/
+
+/*@keyframes slideBg{
+	0%{
+		background-image: url('img/hero-banner3.jpg');
+	}
+	25%{
+		background-image: url('img/slideshow4.jpg');
+	}
+	50%{
+		background-image: url('img/hero-banner2.jpg');
+	}
+	75%{
+		background-image: url('img/hero-banner4.jpg');
+	}
+	100%{
+		background-image: url('img/slideshow5.jpg');
+	}
+}*/
+
+.logo-banner img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a.cta.alt{
+	display: inline-block;
+	width: 100px;
+	font-weight: 300;
+	font-size: 21px;
+	padding: 13px 12px;
+	position: relative;
+	top: -55px;
+	left: calc(50% - 139px);
+	background-color: #2d8586;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+#cta-orange{
+	background-color: #FF6738;
+}
+
+a.cta.nav{
+	border-radius: 20px;
+	background-color: #FF8848;
+}
+
+.description-banner {
+	margin: 50px 0;
+	padding: 0 20px;
+}
+
+.map-banner {
+	background-color: #00292C;
+	color: #ECEEEF;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+#map {
+	margin: 0 auto 35px auto;
+	max-width: 1200px;
+	height: 470px;	
+}
+
+.map-banner h2 {
+	font-size: 100px;
+	font-weight: 800;
+	margin: 0;
+	text-align: center;
+}
+
+.map-banner p {
+	font-size: 25px;
+	font-weight: 300;
+	color: #ECEEEF;
+}
+
+.review-banner {
+	color: #ECEEEF;
+	padding: 40px 20px;
+	text-align: left;
+	color: #444;
+}
+
+.review-item {
+	padding: 10%;
+	border: 1px solid #cbcbcc;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05);
+	box-sizing: border-box;	
+	margin-bottom: 20px;
+}
+
+.review-item img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.footer {
+	background-color: #0A0A0A;
+	padding: 0 10px;
+	min-height: 70px;
+}
+
+.footer .menu {
+	margin: 15px auto;
+	text-align: center;
+}
+
+.footer ul {
+	padding: 0;
+	margin: 0;
+}
+
+.footer li {
+	display: 	block;
+	padding-bottom: 15px;
+}
+
+.footer a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #8A8A8A;
+	text-decoration: none;
+	padding: 2px 10px;
+	line-height: 21px;
+	margin: 0;
+}
+
+@media only screen and (min-width: 560px) {
+	/*
+	Mobile to tablet transitions
+	*/
+	.logo-banner{
+		height: 77vh;
+	}
+
+	.logo-banner .container {
+		padding-top: 50px;
+	}
+
+	a.cta.alt{
+		top: -80px;
+		left: 27px;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	.review-item {
+		padding: 20px;			
+		margin: 0;
+	}
+
+	.footer .menu {
+		float: left;
+		margin: 15px 0;
+	}
+
+	.footer li {
+		display: inline-block;
+		padding-bottom: 0;
+	}
+
+	.col-4 {
+		float: left;
+		width: 33.33333333%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.col-6 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/*
+	Tablet to desktop transitions, currently none required
+	*/
+}
+
+
+/*-----------------------------------------------------------
+Pop-ups
+-------------------------------------------------------------*/
+
+
+#page-mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+#login {
+   display: none;
+   z-index: 1;
+   position: fixed;
+   top: 20%;
+   left: calc(50% - 170px);
+   webkit-animation-name: animatetop-login;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop-login;
+   animation-duration: 0.4s
+}
+
+#signup {
+	display: none;
+	z-index: 1;
+	position: fixed;
+	top: 10%;
+	left: calc(50% - 375px);
+	webkit-animation-name: animatetop-signup;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop-signup;
+	animation-duration: 0.4s
+}
+
+/*#signup .signup-form {
+	position: relative;
+}*/
+
+#signup .form {
+	box-sizing: border-box;
+}
+
+@-webkit-keyframes animatetop-signup {
+  from {top: -20%; opacity: 0} 
+  to {top: 10%; opacity: 1}
+}
+
+@keyframes animatetop-signup {
+  from {top: -20%; opacity: 0}
+  to {top: 10%; opacity: 1}
+}
+
+@-webkit-keyframes animatetop-login {
+	from {top: -20%; opacity: 0}
+	to {top: 20%; opacity: 1}
+}
+
+@keyframes animatetop-login {
+	from {top: -20%; opacity: 0}
+	to {top: 20%; opacity: 1}
+}
+
+
+/*-----------------------------------------------------------
+Grid
+-------------------------------------------------------------*/
+
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.col-1 {
+    float: left;
+    width: 8.33333333%;
+    box-sizing: border-box;
+}
+
+.col-2 {
+    float: left;
+    width: 16.66666667%;
+    box-sizing: border-box;
+}
+
+.col-3 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+/*.col-4 {
+	float: left;
+	width: 33.33333333%;
+	padding: 20px;
+	box-sizing: border-box;
+}*/
+
+.col-5 {
+    float: left;
+    width: 41.66666667%;
+    box-sizing: border-box;
+}
+
+/*.col-6 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}*/
+
+.col-7 {
+    float: left;
+    width: 58.33333333%;
+    box-sizing: border-box;
+}
+
+.col-8 {
+    float: left;
+    width: 66.66666667%;
+    box-sizing: border-box;
+}
+
+.col-9 {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.col-10 {
+    float: left;
+    width: 83.33333333%;
+    box-sizing: border-box;
+}
+
+.col-11 {
+    float: left;
+    width: 91.66666667%;
+    box-sizing: border-box;
+}
+
+.col-12 {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}

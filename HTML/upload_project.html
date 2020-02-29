@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload project</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/upload_project.css">
+</head>
+<body>
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="logo">
+                <a href="../PHP/edit_profile_page.php"><img src="../img/logoWithBar4.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a class="cta nav" href="#" id="action3"><img src="../img/loupe.png" alt="Search page icon"> Search</a></li>
+                    <li><a class="cta" href="#" id="action1"><img src="../img/alarm.png" alt="Notifications icon"></a></li>
+                    <li><a class="cta" href="#"><img src="../img/user.png" alt="User icon"></a></li>
+                    <li><a class="cta" href="#"><img src="../img/home.png" alt="Home icon"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="upload_main">
+        <form>
+        <h1>Upload your project</h1>
+        Project name : <input type="text" class="project_text">
+        <p></p>
+        Price : £&ensp;<input type="number" class="project_text" min="0" step="100"><!--add a space between input and text-->
+        <p></p>
+        Upload the project images :&ensp;<input type="file" id="browse_images">
+        <p></p>
+        Add tags:
+        <input type="text" list="tags" multiple  id="tags_name">
+        <datalist id="tags">    <!--create a datalist for tags and allow users to input their own tags-->
+            <option value="Flat">
+            <option value="Kitchen">
+            <option value="Bedroom">
+            <option value="Garden">
+        </datalist>
+        <p></p>
+        Project description :
+        <p></p>
+        <textarea id="project_introduction" rows="20" cols="120" style="resize:none"></textarea> <!--users could change the size of textarea-->
+        <p></p>
+        <input type="submit" value="Submit" id="upload_submit">
+        </form>
+    </div>
+</body>
+</html>
